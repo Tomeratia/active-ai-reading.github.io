@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Modification at Inference Time"
-description: One sentence on what you found.
+description: Recent techniques for context aware model adaptation
 paper: multi-stream-attention-residuals
 role: scouting
 task: hidden-gems
