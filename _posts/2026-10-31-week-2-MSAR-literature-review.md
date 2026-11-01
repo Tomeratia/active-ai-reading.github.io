@@ -1,6 +1,6 @@
 ---
 title: "literature review of Multi-Stream Attention Residuals"
-description: LImportant previous articles for this paper
+description: Important previous articles for this paper, building the knowledge of it
 paper: paper-id
 role: research
 task: literature
@@ -32,6 +32,13 @@ The problem solved in MSAR and AttnRes is that having one residual connection us
 Building upon residual connections, this paper introduces the conpcet of having multiple residual streams.
 These streams are added (residualy) for later layers of the networks and are updated accordingly.
 In order to not make these streams to now just be one single longer stream, creating the next set of residual streams requires projecting via a doubly stochastic matrix into a lower-dimension manifold.
+
+### [DenseFormer: Enhancing Information Flow in Transformers via Depth Weighted Averaging](https://arxiv.org/pdf/2402.02622)
+
+The paper introduces layer-wise feature (weighted) averaging as the data passed to the residual connection.
+Meaning, it introduces what in this paper becomes a convolutional layer, the usage of features from several layers together, toe be used in later layer.
+Using features independently of the layer allows for more complex presentation of each feature which should allow later layers to use the data from prev layers more effectively.
+Notice that here this is done by weighted averaging (static weights after learning) which is not sophisticated and complex as MSAR, making it transfer not the correct information from each subsequent layer
 
 ## The fields and concepts it connects to
 
