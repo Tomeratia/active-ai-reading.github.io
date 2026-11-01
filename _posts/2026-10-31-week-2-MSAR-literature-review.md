@@ -1,7 +1,7 @@
 ---
 title: "literature review of Multi-Stream Attention Residuals"
 description: Important previous articles for this paper, building the knowledge of it
-paper: paper-id
+paper: multi-stream-attention-residuals
 role: research
 task: literature
 by: shachar731945
