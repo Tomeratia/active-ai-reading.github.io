@@ -1,0 +1,36 @@
+#msar-explorer {
+  margin: 2rem 0;
+  padding: 1.25rem 0;
+  border-top: 2px solid var(--global-theme-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  font-family: var(--course-sans, sans-serif);
+}
+#msar-explorer .msar-eyebrow { color: var(--global-theme-color); font-size: .85rem; font-weight: 700; letter-spacing: .04em; }
+#msar-explorer h2 { margin-top: .25rem; }
+#msar-explorer .msar-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.5rem; margin: 1.25rem 0; }
+#msar-explorer label { display: block; margin: 0; font-weight: 600; min-width: 0; }
+#msar-explorer select { margin-top: .4rem; background: var(--global-bg-color); color: var(--global-text-color); border-color: var(--global-divider-color); font-size: 1rem; height: auto; min-height: 44px; }
+#msar-explorer input[type="range"] { display: block; width: 100%; min-height: 44px; accent-color: var(--global-theme-color); }
+#msar-explorer output { font-variant-numeric: tabular-nums; }
+#msar-explorer .msar-status { font-weight: 600; }
+#msar-explorer .msar-figure { margin: 0; }
+#msar-explorer svg { display: block; width: 100%; touch-action: pan-y; }
+#msar-explorer svg text { fill: var(--global-text-color); font: 12px sans-serif; }
+#msar-explorer svg .msar-axis { font-weight: 600; }
+#msar-explorer .msar-masked { fill: url(#msar-hatch); stroke: var(--global-divider-color); }
+#msar-explorer .msar-window { fill: var(--global-code-bg-color); stroke: var(--global-theme-color); stroke-dasharray: 2 2; }
+#msar-explorer .msar-cell { cursor: crosshair; }
+#msar-explorer .msar-selection { fill: none; stroke: var(--global-text-color); stroke-width: 2; pointer-events: none; }
+#msar-explorer .msar-target { fill: none; stroke: var(--global-theme-color); stroke-width: 2; pointer-events: none; }
+#msar-explorer figcaption { text-align: left; font-size: .85rem; line-height: 1.6; margin-top: .75rem; color: var(--global-text-color); }
+#msar-explorer .msar-key { display: block; }
+#msar-explorer .msar-mask-swatch, #msar-explorer .msar-target-swatch { display: inline-block; width: 15px; height: 12px; margin-right: .3rem; vertical-align: middle; }
+#msar-explorer .msar-mask-swatch { background: repeating-linear-gradient(135deg, transparent 0 3px, var(--global-divider-color) 3px 4px); border: 1px solid var(--global-divider-color); }
+#msar-explorer .msar-target-swatch { border: 2px solid var(--global-theme-color); }
+#msar-explorer .msar-small { font-size: .9rem; }
+#msar-explorer .msar-detail { padding: .8rem 1rem; border-left: 3px solid var(--global-theme-color); background: var(--global-code-bg-color); font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) {
+  #msar-explorer .msar-controls { grid-template-columns: 1fr; gap: .7rem; }
+  #msar-explorer { padding-top: 1rem; }
+}

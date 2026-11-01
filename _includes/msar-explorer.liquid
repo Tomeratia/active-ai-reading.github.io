@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="{{ '/assets/css/msar.css' | relative_url }}">
+<section id="msar-explorer" aria-labelledby="msar-title">
+  <p class="msar-eyebrow">Synthetic demonstration · no trained weights</p>
+  <h2 id="msar-title">Across tokens, then across depth</h2>
+  <p>Read each row horizontally: a causal convolution forms one source vector. Then read vertically: the selected stream mixes those vectors using depth attention.</p>
+  <div class="msar-controls">
+    <label for="msar-stream">Stream
+      <select id="msar-stream" class="form-control"><option value="0">Identity · 1 token</option><option value="1" selected>Conv-4 · up to 4 tokens</option><option value="2">Conv-8 · up to 8 tokens</option><option value="3">Conv-12 · up to 12 tokens</option></select>
+    </label>
+    <label for="msar-mode">Color shows
+      <select id="msar-mode" class="form-control"><option value="attention">Depth-attention weights</option><option value="contribution" selected>Contribution magnitudes</option></select>
+    </label>
+    <label for="msar-layer">Target layer ℓ: <output id="msar-layer-value" for="msar-layer">6</output>
+      <input id="msar-layer" type="range" min="1" max="8" value="6">
+    </label>
+    <label for="msar-token">Target token t: <output id="msar-token-value" for="msar-token">11</output>
+      <input id="msar-token" type="range" min="0" max="15" value="11">
+    </label>
+  </div>
+  <p id="msar-status" class="msar-status" aria-live="polite"></p>
+  <p id="msar-mode-note"></p>
+  <figure class="msar-figure">
+    <svg id="msar-chart" role="img" aria-labelledby="msar-chart-title msar-chart-desc"></svg>
+    <figcaption>
+      <span class="msar-key"><span class="msar-mask-swatch"></span>Masked: unavailable source or token outside the window.</span>
+      <span class="msar-key"><span class="msar-target-swatch"></span>Outlined column: target token.</span>
+      <span id="msar-scale-label"></span>
+    </figcaption>
+  </figure>
+  <p class="msar-small">Tap a cell to inspect it, or use the selectors below. Only sources i &lt; ℓ are available; row 0 is the embedding.</p>
+  <div class="msar-controls msar-inspector">
+    <label for="msar-source">Inspect source layer i<select id="msar-source" class="form-control"></select></label>
+    <label for="msar-position">Inspect source token<select id="msar-position" class="form-control"></select></label>
+  </div>
+  <p id="msar-detail" class="msar-detail" aria-live="polite"></p>
+  <p id="msar-retrieved" class="msar-small"></p>
+  <noscript>This explorer needs JavaScript. The equations and reading guide below describe the same computation.</noscript>
+</section>
+<script src="{{ '/assets/js/msar-model.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/msar-explorer.js' | relative_url }}" defer></script>
