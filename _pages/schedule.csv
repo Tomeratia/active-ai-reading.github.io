@@ -10,12 +10,12 @@ sitemap: false
   calendar from it and marks a paper as read once that day has passed. Keep the column order:
   the sheet's formulas refer to the columns by position.
 {%- endcomment -%}
-week,date,paper_id,title,page,arxiv,topic,notes
+week,date,paper_id,title,page,link,topic,notes
 {% for w in site.data.schedule -%}
 {%- assign paper = site.papers | where: 'slug', w.paper | first -%}
 {%- capture ts %}{% include course/class_date.liquid week=w.week %}{% endcapture -%}
 {%- capture paper_title -%}{% if paper %}{{ paper.title }}{% endif %}{%- endcapture -%}
 {%- capture page_url -%}{% if paper %}{{ paper.url | absolute_url }}{% endif %}{%- endcapture -%}
-{%- capture arxiv -%}{% if paper.arxiv %}https://arxiv.org/abs/{{ paper.arxiv }}{% endif %}{%- endcapture -%}
+{%- capture arxiv -%}{% if paper.arxiv %}https://arxiv.org/abs/{{ paper.arxiv }}{% elsif paper.url_paper %}{{ paper.url_paper }}{% endif %}{%- endcapture -%}
 {{ w.week }},{{ ts | date: "%Y-%m-%d" }},"{{ w.paper }}","{{ paper_title | strip | replace: '"', '""' }}","{{ page_url }}","{{ arxiv }}","{{ w.topic | replace: '"', '""' }}","{{ w.notes | replace: '"', '""' }}"
 {% endfor -%}
