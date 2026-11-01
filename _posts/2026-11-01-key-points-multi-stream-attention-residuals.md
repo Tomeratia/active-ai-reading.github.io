@@ -1,11 +1,14 @@
 
+
 ---
 title: "Multi-Head Depth Attention Is Not Just Multiple Queries"
-description: "What MSAR really adds to AttnRes, and how the paper could make it clearer."paper: multi-stream-attention-residuals
+description: "What MSAR really adds to AttnRes, and how the paper could make it clearer."
+paper: multi-stream-attention-residuals
 role: writing
 task: key-points
-by: Reuvenspitz
+by: [Reuvenspitz]
 ---
+
 
 I think the main challenge in reading this paper is understanding what exactly MSAR adds to previous residual methods. The paper has several design choices, and I think it would be easier to follow if the motivation for each one was explained separately.
 
