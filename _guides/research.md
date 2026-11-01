@@ -24,6 +24,9 @@ Yours to write. Some questions to start from:
 ### Look at the references
 
 References are a great way to understand what were the previous article leading up to the current article and what were the related works in the field (that this article compares itself to).
+
+#### Multi-Stream Attention Residual
+
 For example, in Multi-Stream-Att-Res the article is presented as a direct continuation and generalization of AttRes and mCH.
 
 
