@@ -489,12 +489,14 @@ body {
 }
 
 .post h2,
-.post h3,
-.post h4,
-.post h5,
-.post-content h2,
-.post-content h3,
-.post-content h4,
+.post-content h2 {
+  font-family: var(--course-sans);
+  font-size: 1.3rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  color: var(--global-text-color);
+  margin: 2rem 0 0.5rem;
+}
 .section-title,
 .role-group h3,
 .role-section h2 {
@@ -504,6 +506,33 @@ body {
   letter-spacing: 0;
   color: var(--global-text-color);
   margin: 2rem 0 0.5rem;
+}
+.post h3,
+.post-content h3 {
+  font-family: var(--course-sans);
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  color: var(--global-text-color);
+  margin: 2rem 0 0.5rem;
+}
+.post h4,
+.post-content h4 {
+  font-family: var(--course-sans);
+  font-size: 1.1rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  color: var(--global-text-color);
+  margin: 1.5rem 0 0.4rem;
+}
+.post h5,
+.post-content h5 {
+  font-family: var(--course-sans);
+  font-size: 1.02rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  color: var(--global-text-color);
+  margin: 1.25rem 0 0.35rem;
 }
 .post-title {
   font-size: 2rem;
