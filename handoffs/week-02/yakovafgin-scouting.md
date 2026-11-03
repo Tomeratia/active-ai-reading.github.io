@@ -1,4 +1,4 @@
-# Week 2 — Paper scouting: Trending papers
+# Paper scouting: Trending papers
 
 [Hugging Face Papers](https://huggingface.co/papers) is a useful starting point for finding trending papers on topics that interest you.
 
