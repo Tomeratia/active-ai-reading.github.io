@@ -5,6 +5,6 @@ authors: Jonas Geiping, Sean McLeish, Neel Jain, John Kirchenbauer, Siddharth Si
 year: 2025
 arxiv: "2502.05171"
 tldr: >
-  (To be written by the class after week 3.)
+  Warning: this is a survey paper, it is long and you won't understand and read everything, it is fine (To be written by the class after week 3.)
 tags: [reasoning, test-time compute]
 ---
