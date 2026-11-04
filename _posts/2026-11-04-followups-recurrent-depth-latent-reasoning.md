@@ -1,5 +1,5 @@
 ---
-title: Can we make machine to think more like humans
+title: "Can we make machine to think more like humans"
 description: Adaptive Reasoning: Teaching Language Models When to Think and When to Write
 paper: recurrent-depth-latent-reasoning
 role: research
