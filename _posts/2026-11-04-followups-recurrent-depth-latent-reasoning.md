@@ -4,7 +4,7 @@ description: Adaptive Reasoning: Teaching Language Models When to Think and When
 paper: recurrent-depth-latent-reasoning
 role: research
 task: followups
-by: [your-github-username]
+by: [matan2001]
 ---
 
 <!-- Keep the block for your task, delete the others. To cite, add the BibTeX to _bibliography/references.bib and use the cite tag (see the guide page). -->
