@@ -27,7 +27,7 @@ This raises a question:
 
 **Instead of forcing a language model to always think for a fixed amount of time or always generate Chain-of-Thought, can we teach it to decide when each approach is useful?**
 
-## Proposed Idea: A Unified Reasoning Controller
+## Proposed Idea: A Reasoning Controller
 
 I propose extending Huginn with a single lightweight controller that dynamically decides how the model should allocate its reasoning computation.
 
@@ -206,7 +206,7 @@ I would approach training in stages.
 
 First, we would fine-tune Huginn on examples containing explicit reasoning steps, using markers such as `<STEP>`, `<END_STEP>`, and `<ANSWER>`. This would teach Huginn how to generate intermediate calculations when the controller requests them.
 
-Next, we would freeze Huginn and train only the unified controller using reinforcement learning, possibly with a policy-gradient algorithm such as PPO (Proximal Policy Optimization).
+Next, we would freeze Huginn and train only the unified controller using reinforcement learning, possibly with a policy-gradient algorithm such as PPO-Clip (Proximal Policy Optimization).
 
 During training, the controller would explore different sequences of actions, receive rewards based on final-answer correctness and normalized computation cost, and gradually learn which strategies are most effective.
 
