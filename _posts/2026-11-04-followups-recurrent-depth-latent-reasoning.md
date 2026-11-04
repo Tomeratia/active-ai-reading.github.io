@@ -7,8 +7,6 @@ task: followups
 by: [matan2001]
 ---
 
-<!-- Keep the block for your task, delete the others. To cite, add the BibTeX to _bibliography/references.bib and use the cite tag (see the guide page). -->
-
 ## Motivation
 
 When we solve a problem, we don't always approach it in the same way. Some questions are simple enough that we can answer them almost immediately. Others require us to stop and think for a while.
