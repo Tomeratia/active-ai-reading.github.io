@@ -1,0 +1,17 @@
+{
+  "model_id": "tomg-group-umd/huginn-0125",
+  "model_revision": "bb6621b65e90b6a4b9b29ef88dc83866d450470c",
+  "source_run_id": "20261103T130348450296Z-5af7c83e",
+  "seed": 42,
+  "recurrent_steps": 128,
+  "dtype": "torch.bfloat16",
+  "prompt_only": true,
+  "pca_refitted_for_post": false,
+  "cases": {
+    "france": "fast-france",
+    "many": "slow-many",
+    "wrong": "slow-wrong",
+    "nonsense": "fast-literally"
+  },
+  "source": "https://arxiv.org/abs/2502.05171"
+}
