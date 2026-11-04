@@ -1,6 +1,6 @@
 ---
-title: "<Critique / literature review / follow-ups> of <paper>"
-description: One sentence summary of your take.
+title: Can we make machine to think more like humans
+description: Adaptive Reasoning: Teaching Language Models When to Think and When to Write
 paper: recurrent-depth-latent-reasoning
 role: research
 task: followups
@@ -8,8 +8,6 @@ by: [your-github-username]
 ---
 
 <!-- Keep the block for your task, delete the others. To cite, add the BibTeX to _bibliography/references.bib and use the cite tag (see the guide page). -->
-
-# Adaptive Reasoning: Teaching Language Models When to Think and When to Write
 
 ## Motivation
 
