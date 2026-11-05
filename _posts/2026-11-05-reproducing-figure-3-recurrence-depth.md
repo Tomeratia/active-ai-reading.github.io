@@ -27,7 +27,7 @@ r = rng.poisson(lam=rate) + 1
 
 ## Results
 
-![Reproduced distribution of recurrence counts. Vertical lines mark the mode at 24, the median at 29, and the mean at 33.](/assets/img/posts/reproducing-figure-3-recurrence-depth/figure-3.png)
+{% include figure.liquid path="assets/img/posts/reproducing-figure-3-recurrence-depth/figure-3.png" class="img-fluid rounded" caption="Reproduced distribution of recurrence counts. Vertical lines mark the mode at 24, the median at 29, and the mean at 33." %}
 
 | Statistic | Figure 3 | Reproduction |
 |---|---:|---:|
