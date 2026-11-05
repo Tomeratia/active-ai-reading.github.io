@@ -17,9 +17,15 @@ The rewrite (1) opens with the one-sentence idea, thinking by looping instead of
 
 <div class="before-after">
   <div class="before"><span class="label">Before</span>
+
+  **Before:**
+
   We study a novel language model architecture that is capable of scaling test-time computation by implicitly reasoning in latent space. Our model works by iterating a recurrent block, thereby unrolling to arbitrary depth at test-time. This stands in contrast to mainstream reasoning models that scale up compute by producing more tokens. Unlike approaches based on chain-of-thought, our approach does not require any specialized training data, can work with small context windows, and can capture types of reasoning that are not easily represented in words. We scale a proof-of-concept model to 3.5 billion parameters and 800 billion tokens. We show that the resulting model can improve its performance on reasoning benchmarks, sometimes dramatically, up to a computation load equivalent to 50 billion parameters.
   </div>
   <div class="after"><span class="label">After</span>
+
+  **After:**
+
   Today's reasoning models think by writing more tokens. We show a language model can think by looping instead: a block of layers is repeated as many times as needed at test time, so the model reasons in its hidden state and produces no extra text. This needs no chain-of-thought training data, works with a small context window, and is not limited to reasoning that can be put into words. We train a 3.5B-parameter proof of concept on 800B tokens. Giving it more iterations raises its accuracy on reasoning benchmarks, up to a compute budget equal to a 50B-parameter model. The gains are largest on hard tasks: on GSM8K, an early checkpoint of the recurrent model is already 5 times better than a non-recurrent model trained in exactly the same setting, while easy tasks such as HellaSwag stop improving after about 8 iterations.
   </div>
 </div>
