@@ -69,7 +69,7 @@ Save (commit) to the `main` branch. That's it. In about 3–5 minutes the site r
 | **Codespaces** (recommended) | longer posts, design changes | On the repo page: **Code → Codespaces → Create codespace on main**. A VS Code opens in the browser and, after a few minutes the first time, a live preview of the site. Free for students with [GitHub Education](https://education.github.com/pack). |
 | **Your own computer** | if you like your own tools | `git clone`, then `docker compose up` and open <http://localhost:8080>. Without Docker you need Ruby, see [docs/al-folio/INSTALL.md](https://github.com/{{ site.github_repo }}/blob/main/docs/al-folio/INSTALL.md). |
 
-When working with git (Codespaces or locally), always `git pull --rebase` before `git push`. With 50 people pushing, someone will have pushed before you.
+When working with git (Codespaces or locally), always `git pull --rebase` before `git push`. With 30-odd people pushing, someone will have pushed before you.
 
 ## Writing features, quickly
 
