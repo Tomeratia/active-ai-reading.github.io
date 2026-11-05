@@ -31,7 +31,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3.13"
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
@@ -96,3 +96,4 @@ jobs:
         run: |
           NUM=$(gh issue list --state open --search '"Site build is broken" in:title' --json number --jq '.[0].number')
           if [ -n "$NUM" ]; then gh issue close "$NUM" --comment "Fixed: the site builds again (${GITHUB_SHA:0:7})."; fi
+  
